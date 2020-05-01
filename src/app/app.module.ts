@@ -22,6 +22,7 @@ import { MaterialModule } from './material.module';
     BrowserAnimationsModule,
     MaterialModule
   ],
+  exports: [PostComponent],
   providers: [],
   bootstrap: [AppComponent]
 })
