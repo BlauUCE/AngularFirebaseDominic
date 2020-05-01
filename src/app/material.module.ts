@@ -10,6 +10,7 @@ import {
   MatListModule
 } from '@angular/material';
 import { HomeComponent } from './components/pages/home/home.component';
+import { RouterModule } from '@angular/router';
 
 const myModules = [
   MatCardModule,
@@ -25,7 +26,8 @@ const myModules = [
   declarations: [ HomeComponent ],
   imports: [
     CommonModule,
-    myModules
+    myModules,
+    RouterModule
   ],
   exports: [myModules]
 })

@@ -10,7 +10,7 @@ const routes: Routes = [
   //no se necesita
   //{ path: 'posts', loadChildren: () => import('./components/posts/list-post/list-post.module').then(m => m.ListPostModule) }];
 
-  { path: 'posts/post/:id', component: PostComponent}
+  { path: 'post/:id', component: PostComponent}
   ];
 
 @NgModule({
