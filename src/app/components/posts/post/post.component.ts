@@ -17,7 +17,7 @@ export class PostComponent implements OnInit {
       id: '1',
       titlePost: 'Post ',
       contentPost: 'hola mundo',
-      imagePost: 'https://picsum.photos/800/600'
+      imagePost: 'https://picsum.photos/300/200'
   };
 
   constructor(private route:ActivatedRoute) {
