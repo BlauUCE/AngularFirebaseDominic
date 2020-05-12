@@ -7,7 +7,10 @@ import {
   MatToolbarModule,
   MatIconModule,
   MatSidenavModule,
-  MatListModule
+  MatListModule,
+  MatProgressSpinnerModule,
+  MatDividerModule,
+  MatChipsModule
 } from '@angular/material';
 import { HomeComponent } from './components/pages/home/home.component';
 import { RouterModule } from '@angular/router';
@@ -19,7 +22,10 @@ const myModules = [
   MatToolbarModule,
   MatIconModule,
   MatSidenavModule,
-  MatListModule
+  MatListModule,
+  MatProgressSpinnerModule,
+  MatDividerModule,
+  MatChipsModule
 ];
 
 @NgModule({

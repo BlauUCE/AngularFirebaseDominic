@@ -11,7 +11,7 @@ import { Observable } from 'rxjs';
 })
 export class HomeComponent implements OnInit {
 
-  public posts: {
+  /* public posts: {
     id: string;
     titlePost: string;
     contentPost: string;
@@ -74,15 +74,16 @@ export class HomeComponent implements OnInit {
       imagePost: 'https://picsum.photos/450/350'
     }
   ]
-
+ */
   public posts$: Observable<PostI[]>;
 
   constructor(private postSvc: PostService) { }
 
   ngOnInit() {
-    this.postSvc.getAllPosts().subscribe ( res => {
+    /* this.postSvc.getAllPosts().subscribe ( res => {
       console.log('POST', res);
-    });
+    }); */
+    this.posts$ = this.postSvc.getAllPosts();
   }
 
 }
