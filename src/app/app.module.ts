@@ -11,12 +11,15 @@ import { MaterialModule } from './material.module';
 
 import { ToolbarComponent } from './shared/components/toolbar/toolbar.component';
 
+import { ReactiveFormsModule } from '@angular/forms';
+
 /*Firebase*/
 import { AngularFirestoreModule} from '@angular/fire/firestore'
 import { AngularFireStorageModule, StorageBucket } from '@angular/fire/storage';
 import { AngularFireModule } from '@angular/fire'
-import { environment } from 'src/environments/environment';
+import { AngularFireAuthModule } from '@angular/fire/auth'
 
+import { environment } from 'src/environments/environment';
 
 @NgModule({
   declarations: [
@@ -32,10 +35,12 @@ import { environment } from 'src/environments/environment';
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFirestoreModule,
     AngularFireStorageModule,
+    AngularFireAuthModule,
 
     AppRoutingModule,
     NewPostModule,
-    MaterialModule
+    MaterialModule,
+    ReactiveFormsModule
   ],
   exports: [PostComponent],
   providers: [ { provide: StorageBucket, useValue: 'gs://ngblog-2e1fb.appspot.com' } ],

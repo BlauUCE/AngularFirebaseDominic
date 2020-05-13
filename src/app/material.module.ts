@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+
 import {
   MatCardModule,
   MatButtonModule,
@@ -10,7 +11,9 @@ import {
   MatListModule,
   MatProgressSpinnerModule,
   MatDividerModule,
-  MatChipsModule
+  MatChipsModule,
+  MatInputModule,
+  MatFormFieldModule
 } from '@angular/material';
 import { HomeComponent } from './components/pages/home/home.component';
 import { RouterModule } from '@angular/router';
@@ -25,7 +28,9 @@ const myModules = [
   MatListModule,
   MatProgressSpinnerModule,
   MatDividerModule,
-  MatChipsModule
+  MatChipsModule,
+  MatInputModule,
+  MatFormFieldModule
 ];
 
 @NgModule({
