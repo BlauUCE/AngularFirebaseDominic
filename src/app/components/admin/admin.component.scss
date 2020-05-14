@@ -1,0 +1,33 @@
+.nav-bar {
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+    mat-icon {
+        cursor: pointer;
+    }
+}
+
+mat-sidenav {
+    width: 200px;
+    cursor: pointer;
+    background: rgb(23, 21, 48);
+    position: fixed;
+    top: 55px;
+    z-index: 1000;
+}
+
+/* .mat-list-base .mat-list-item .mat-list-item-content, .mat-list-base .mat-list-option .mat-list-item-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 16px;
+    position: relative;
+    height: inherit;
+} */                   
+
+.mat-list-base .mat-list-item {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}

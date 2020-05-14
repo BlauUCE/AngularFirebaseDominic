@@ -9,7 +9,7 @@ import { AuthService } from '../../../shared/services/auth.service';
 
 export class ToolbarComponent implements OnInit {
 
-  public appName: string = 'Home';
+  public appName: string = 'Blog';
 
   constructor(public authSvc: AuthService) { }
 
